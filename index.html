@@ -1,10 +1,13 @@
-<script src="https://github.com/netizenorg/netnet-standard-library.git"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/netizenorg/netnet-standard-library@1.0.1/build/nn.min.js"></script>
 <script>
   /* global nn */
+  /** In the demo, they provided a link to https://github.com/netizenorg/netnet-standard-library 
+  which you can scroll down from and get the line of code that I put on the top **/
 
   async function setup () {
     // fetch data from the "Dog CEO" REST API
-    const url = 'https://dog.ceo/api/breed/samoyed/images/random'
+    const url = 'https://dog.ceo/api/breed/german/shepherd/images/random'
     const res = await fetch(url)
     const data = await res.json()
     // press F12 to open console (fn + F12 on mac)
